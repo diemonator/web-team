@@ -2,13 +2,14 @@
     background-color: transparent;
 }
 
+
 ul.nav {
     color: white !important;
     font-size: 20px;
 }
 
 ul.nav a:hover {
-    color: #5669bc;
+    color: #5669bc; 
 }
 
 .background-wrap {
