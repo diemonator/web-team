@@ -17,13 +17,13 @@ ul.nav a:hover {
     color: #5669bc;
     background-color: white;
 }
-ul.nav a {
-	color: #c689d6;
-}
 ul.nav a:visited {
-    color: #5669bc;
+    color: #84129b;
     background-color: white;
 }
 ul.nav a:visited:hover {
+	color: #c689d6;
+}
+.nav-item a {
 	color: #c689d6;
 }
