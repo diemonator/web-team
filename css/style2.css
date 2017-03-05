@@ -101,6 +101,7 @@ body {
 @media (max-width: 770px) {
     .nav .nav-item {
         background: white;
+        opacity: 0.7;
         border-radius: 10px;
     }
     ul li a.nav-link {
