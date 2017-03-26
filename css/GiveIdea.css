@@ -5,7 +5,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-
+#logo:hover:not(.active) {
+    background-color: transparent;
+}
 body {
     background-position: fixed;
     margin: 0;
@@ -50,7 +52,7 @@ ul.topnav li a {
 
 ul.topnav li a:hover:not(.active) {
     background-color: #111;
-    color: #A31621;
+    color: white;
 }
 
 ul.topnav li a.active {
@@ -112,12 +114,16 @@ div > a:focus {
 div > form {
     padding: 15px;
     border-style: outset;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 2px 2px 2px #888888;
     text-align: center;
     width: 650px;
     border-radius: 5px;
     background-color: rgba(242, 242, 242,0.8);
     margin: 50px auto;
+}
+
+div > form:hover {
+  box-shadow: 5px 5px 5px #A31621;
 }
 form > fieldset {
     border: 0px;
@@ -171,7 +177,7 @@ input[type=e-mail], select {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #A31621;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -194,7 +200,16 @@ p {
     text-align: justify;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 770px) {
+  fieldset > label {
+    display: block;
+}
+input[type=text], select {
+    width: 100%
+}
+input[type=e-mail], select {
+    width: 100%
+}
   .mobile {
     display: block;
   }
@@ -210,7 +225,9 @@ p {
         color: white;
         font-family: Arial, Helvetica;
     }
-    input { width: 100%;}
+    input { 
+      width: 100%;
+    }
     #menu {
         margin-top: 8px;
         display: block;

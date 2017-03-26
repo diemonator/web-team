@@ -44,9 +44,11 @@ ul.topnav li a {
 
 ul.topnav li a:hover:not(.active) {
     background-color: #111;
-    color: #A31621;
+    color: white;
 }
-
+#logo:hover:not(.active) {
+    background-color: transparent;
+}
 ul.topnav li a.active {
     background-color: #A31621;
 }
@@ -107,17 +109,23 @@ body {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+    margin-bottom: 0;
 }
-
+#contactform {
+  margin-bottom: 0;
+}
 div.form {
     background:rgba(242, 242, 242,0.8);
     width: 420px;
     margin: 0 auto;
-    padding: 20px 50px 20px 50px;
+    padding: 5px 50px 5px 50px;
     border-style: outset;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 5px 5px 5px #888888;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+div.form:hover {
+  box-shadow: 5px 5px 5px #A31621;
 }
 .form fieldset {
     border:0px; 
@@ -224,7 +232,7 @@ select#soflow, select#soflow-color {
 }
 
 .form input.button {
-    background: #4b8df9;
+    background: #A31621;
     display: inline-block;
     padding: 5px 10px 6px;
     color: #fbf7f7;
@@ -250,7 +258,7 @@ select#soflow, select#soflow-color {
 .form input.buttom:hover {
     background-color: #2a78f6; 
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 770px){
     .mobile {
     display: block;
   }

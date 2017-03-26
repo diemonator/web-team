@@ -1,0 +1,210 @@
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    /*line-height: 40px;
+  height: 40px;*/
+    /*border-bottom: 1px solid #888;*/
+    display: inline-block;
+}
+#logo:hover:not(.active) {
+    background-color: transparent;
+}
+.collapse.in {
+    overflow-y: hidden;
+    width: 60%;
+}
+.center-block {
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-bottom: auto;
+}
+#slideshow { 
+    position: relative;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    /*top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px;*/
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ul.topnav {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+}
+.navbar-collapse {
+    padding-left: 10;
+    padding-right: 10;
+}
+
+ul.topnav li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #A31621;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    /*transition: .3s background-color;*/
+}
+.nav li:hover {
+    background-color: #A31621;
+    color: white;
+}
+.image {
+    display: block;
+    height: auto;
+    /*border-radius: 15px;*/
+}
+#slideshow div {
+    width: 100%;
+}
+nav {
+        background-color: #A31621;
+        opacity: 0.9;
+        height: 35px;
+        text-align: center;
+    }
+#menu {
+  color: white;
+}
+.mobile {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.navFix {
+  position: fixed;
+  z-index: 1;
+}
+.mobile div {
+    display: none;
+}
+
+.mobile button {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+div > a {
+  background: #eee;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+div > a.active {
+    background: #A31621;
+    text-decoration: none;
+    color: #222;
+}
+div > a:hover:not(.active),
+div > a:focus {
+  background: #e7e7e7;
+  text-decoration: none;
+  color: #222;
+}
+.mobile button.expanded {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-color: transparent;
+    border: 0;
+}
+
+.mobile a {
+    display: block;
+}
+    .two {
+        padding: 0;
+    }
+@media (max-width: 770px) {
+    .mobile {
+        display: block;
+    }
+    .topnav {
+        display: none;
+    }
+    .nav-tabs {
+      display: none;
+    }
+    .two {
+        padding: 0;
+    }
+    #menu {
+        margin-top: 8px;
+        display: block;
+        text-align: center;
+    }
+    section {
+      width: 100vw;
+      height: 70vh;
+    }
+    nav {
+        background-color: #A31621;
+        opacity: 0.9;
+        height: 35px;
+        text-align: center;
+    }
+    .colTxt {
+      margin-top: 0px;
+    }
+
+}
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        display: block;
+    }
+    
+    
+
+}

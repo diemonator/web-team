@@ -1,45 +1,142 @@
-body { 
-  background-image: url("images/Contact3.jpg") no-repeat center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-ul.topnav {
-    list-style: none;
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #333;
-}
 body {
-      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      margin:0px;
-}
-.navbar-collapse {
-    padding-left: 10;
-    padding-right: 10;
-}
-
-ul.topnav li {
-    display: inline-block;
-    font-size: 14px;
-}
-
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-ul.topnav li a:hover:not(.active) {
-    background-color: #111;
-}
-
-ul.topnav li a.active {
+        background-image: url("images/Contact3.jpg") no-repeat center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    nav {
+        background-color: #A31621;
+        opacity: 0.9;
+        height: 35px;
+        text-align: center;
+    }
+    
+    #logo:hover:not(.active) {
+        background-color: transparent;
+    }
+    
+    ul.topnav {
+        list-style: none;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+    }
+    
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0px;
+        background-image: no-repeat;
+    }
+    
+    .navbar-collapse {
+        padding-left: 10;
+        padding-right: 10;
+    }
+    
+    ul.topnav li {
+        display: inline-block;
+        font-size: 14px;
+    }
+    
+    ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    ul.topnav li a:hover:not(.active) {
+        background-color: #111;
+    }
+    
+    ul.topnav li a.active {
+        background-color: #A31621;
+    }
+    
+    div > a.active {
+        background: #4CAF50;
+    }
+    
+    div.leftcontact {
+        background-color: #A31621;
+        color: white;
+        width: 50%;
+        text-align: right;
+        padding-right: 25px;
+        border-right-style: solid;
+        bottom: 0;
+        right: 0;
+        display: inline-block;
+    }
+    div.leftcontact:hover {
+      box-shadow: 0px -10px 10px black;
+    }
+     div.rightcontact:hover {
+      box-shadow: 0px -10px 10px #A31621;
+    }
+    
+    div.rightcontact {
+        background-color: #111;
+        color: white;
+        width: 50%;
+        bottom: 0;
+        right: 0;
+        text-align: left;
+        padding-left: 25px;
+        border-left-style: solid;
+        display: inline-block;
+    }
+    
+    h1 {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: white;
+    }
+    
+    h2 {
+        margin-top: 8px;
+    }
+    
+    .wrap {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    img {
+        max-width: 230px;
+        max-height: 95px;
+        width: auto;
+        height: auto;
+        align-self: center;
+    }
+    
+    .center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+    
+nav {
     background-color: #A31621;
+    opacity: 0.9;
+    height: 35px;
+    text-align: center;
+}
+
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 .mobile div {
   display: none;
@@ -70,89 +167,84 @@ ul.topnav li a.active {
 .mobile a {
   display: block;
 }
+div > a {
+  background: #eee;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
 div > a.active {
-    background: #4CAF50;
+    background: #A31621;
+}
+div > a:hover:not(.active),
+div > a:focus {
+  background: #e7e7e7;
 }
 
-div.leftcontact {
-    background-color: #A31621;
-    color: white;
-    width: 50%;
-    text-align: right;
-    padding-right: 25px;
-    border-right-style: solid;
-    bottom: 0;
-    right: 0;
-    display: inline-block;
-}
 
-div.rightcontact {
-    background-color: #111;
-    color: white;
-    width: 50%;
-    bottom: 0;
-    right: 0;
-    text-align: left;
-    padding-left: 25px;
-    border-left-style: solid;
-    display: inline-block;
-}
 
-h1 {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: white;
-}
 
-h2 {
-    margin-top: 8px;
-}
 
-.wrap {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-}
 
-img {
-  max-width:230px;
-  max-height:95px;
-  width: auto;
-  height: auto;
-  align-self: center;
-}
-.center {
-    position: fixed;
-    top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-    display: block;
-}
-@media (max-width: 600px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 770px) {
   .mobile {
     display: block;
   }
   .topnav {
     display: none;
-    }
-    nav > div > label {
-        color: white;
+  }
+    div > form {
+    width: 90%
+}
+    nav > div > label { 
+        display: block;
         font-weight: bold;
+        color: white;
         font-family: Arial, Helvetica;
     }
-        nav > div > label {
-        color: white;
-        font-weight: bold;
+    input { width: 100%;}
+    #menu {
+        margin-top: 8px;
+        display: block;
+        text-align: center;
     }
     nav {
-    background-color: purple;
+    background-color: #A31621 ;
     opacity: 0.9;
     height: 35px;
     text-align: center;
 }
-    #menu {
-        margin-top: 8px;
-        display: block;
+    form > label {
+        text-align: left;
+        display: inline-block;
+    width: 100%;
+    margin: 5px 5px 10px 5px;
+    font-weight: bold;
     }
+}
+#demo {
+    text-align: center;
 }
 

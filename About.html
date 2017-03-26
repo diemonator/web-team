@@ -5,43 +5,48 @@
     <title>About</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/ApplyStyle3.css">
-    <style>
-    section {
-        width: 100vw;
-        height: 100vh;
-        padding: 50px;
-        text-align: center;
-    }
-    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/About.css">
+    
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-    <nav class="navbar navbar-fixed-top">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" style="color:white; background-color: black; font-size: 20px;">
-            MENU<span class="caret"></span>
-        </button>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=" .navCol" style="color:white; background-color: black; font-size: 20px;"><span class="caret"></span>
-        </button>
-        <div class="collapse navbar-collapse navHeaderCollapse">
-            <ul class="topnav">
-                <li class="about"><a class="active" href="About.html">About</a></li>
-                <li class="apply"><a href="Apply.html">Apply now</a></li>
-                <li class="events"><a  href="Events.html">Events</a></li>
-                <li class="sentidea"><a href="GiveIdea.html">Send Idea</a></li>
-                <li class="contact"><a href="ContactUs.html">Contact us</a></li>
-            </ul>
+    <nav class="navFix">
+        <ul class="topnav">
+            <li style="float:left;"> <a id="logo" style="padding:0; "href="Home.html"> <img style="height: 48px;" src="images/proxy.png"></a></li>
+            <li class="about"><a class="active" href="About.html">About</a></li>
+            <li class="apply"><a href="Apply.html">Apply</a></li>
+            <li class="events"><a href="Events.html">Events</a></li>
+            <li class="sentidea"><a href="GiveIdea.html">Send Idea</a></li>
+            <li class="contact"><a href="ContactUs.html">Contact us</a></li>
+        </ul>
+        <div class="navbar">
+            <div style="max-height:auto;">
+                <ul class="nav nav-tabs nav-justified">
+                    <li><a href="#whats">What is PROXY?</a></li>
+                    <li><a href="#pres">President</a></li>
+                    <li><a href="#ie">Internal and External</a></li>
+                    <li><a href="#entertainment">Entertainment and Socializing</a></li>
+                    <li><a href="#infrastructure">Infrastructure</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#assisting">Assisting</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse navCol " style="max-height:auto;">
-            <ul class="nav nav-tabs nav-justified">
-                <li><a href="#whats">What is PROXY?</a></li>
-                <li><a href="#pres">President</a></li>
-                <li><a href="#ie">Internal and External</a></li>
-                <li><a href="#entertainment">Entertainment and Socializing</a></li>
-                <li><a href="#infrastructure">Infrastructure</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#assisting">Assisting</a></li>
-            </ul>
+    </nav>
+    <nav style="z-index:1; font-size:16px;" class="mobile">
+        <div id="menu">
+            <label> MENU </label>
+        </div>
+        <button>Toggle</button>
+        <div>
+            <a href="Home.html">Home</a>
+            <a class="active" href="About.html">About</a>
+            <a href="Apply.html">Apply</a>
+            <a href="Events.html">Event</a>
+            <a href="GiveIdea.html">Send Idea</a>
+            <a href="ContactUs.html">Contact us</a>
         </div>
     </nav>
     <section id="whats" style="background: url(images/whats.jpg); background-size: 100% 100%; color: white; padding-left:0; padding-right:0;">
@@ -136,6 +141,8 @@
             </div>
         </div>
     </section>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
