@@ -1,18 +1,12 @@
-body {
-        background-image: url("images/Contact3.jpg") no-repeat center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    
     nav {
         background-color: #A31621;
         opacity: 0.9;
         height: 35px;
         text-align: center;
     }
-    
+    html {
+      height: 100%;
+    }
     #logo:hover:not(.active) {
         background-color: transparent;
     }
@@ -29,6 +23,7 @@ body {
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         margin: 0px;
+        min-height: 100%;
         background-image: no-repeat;
     }
     
@@ -248,3 +243,8 @@ div > a:focus {
     text-align: center;
 }
 
+@media (max-width: 500px) {
+  body{
+    font-size: 14px;
+  }
+}

@@ -216,8 +216,17 @@ input[type=e-mail], select {
   .topnav {
     display: none;
   }
+  form >label {
+    font-size: 12px;
+  }
     div > form {
-    width: 90%
+    width: 80%
+}
+h1 {
+  font-size: 16px;
+}
+fieldset > label {
+  font-size: 12px;
 }
     nav > div > label { 
         display: block;

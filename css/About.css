@@ -1,6 +1,6 @@
 /* color #A31621*/
  section {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         padding: 50px;
         text-align: center;
@@ -10,7 +10,6 @@
 }
  nav {
         background-color: #A31621;
-        opacity: 0.9;
         height: 35px;
         text-align: center;
     }
@@ -301,7 +300,6 @@ nav {
         text-align: center;
     }
     section {
-      width: 100vw;
       height: 70vh;
     }
     nav {
@@ -321,6 +319,9 @@ nav {
     }
     p {
       font-size: 16px;
+    }
+    .one {
+        padding-top: 0px;
     }
 
 }
