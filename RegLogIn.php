@@ -15,7 +15,7 @@ if (isset($_POST['register_btn']))
     mysqli_query($db, $sql);
     $_SESSION['message']= "You are registered in";
     $_SESSION['username']= $username;
-    header("Location: index.php");
+    header("Location: LogIn.html");
     die();
    }
    else {
@@ -36,7 +36,7 @@ if (isset($_POST['login_btn']))
     {
         $_SESSION['message'] = "You are logged in";
         $_SESSION['username']= $username;
-        header("location: home.php");
+        header("location: LogOut.html");
         die();
     }
     else {

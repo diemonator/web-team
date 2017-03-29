@@ -4,5 +4,6 @@ session_start();
 session_destroy();
 unset($_SESSION['username']);
 $_SERVER['message'] = "You are logged out";
-header("location: index.php");
+header("location: LogIn.html");
+die();
 ?>
