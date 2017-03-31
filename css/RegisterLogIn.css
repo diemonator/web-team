@@ -4,6 +4,20 @@ body {
   background: url(http://jsrun.it/assets/p/r/8/X/pr8Xi.png);  /*bg  1a1a1a  434240  */
   color: white;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+ul, ol {
+  list-style: none;
+}
+
+.tabs a {
+  padding: 11px 22px 11px 22px;
+}
 input:focus{
   background-color:yellow;
 }
@@ -26,7 +40,7 @@ input:focus{
   margin-bottom: 20px;
 }
 .container {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .tabs li {
   display: block;
